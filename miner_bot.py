@@ -62,7 +62,7 @@ def format_farm_data(farm):
     name = farm["Name"]
     hashrate = round(float(farm["Hashrate"]))
     last_seen = farm["LastSeen"]
-    return f"<b>{header}<code>Ферма:</code>{name}\n<code>Хэшрейт:</code>{hashrate} KH/s\n<code>Время последней шары:</code>{last_seen}\n</b>"
+    return f"{header}<code>Ферма:</code>{name}\n<code>Хэшрейт:</code>{hashrate} KH/s\n<code>Время последней шары:</code>{last_seen}\n"
 
 # Функция для отображения статистики выплат
 def format_payment_statistics(statistics, limit=None):
